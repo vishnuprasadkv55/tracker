@@ -40,8 +40,25 @@ ol.progress-meter li.done:before {
   width: 19px;
   line-height: 21.85px;
   bottom: -28.175px;
-  border: none;
+  border-style: none;
   border-radius: 19px;
+  border-color: yellowgreen;
+  box-shadow: 0 0 0 rgba(154, 205, 50, 0.4);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(154, 205, 50, 0.4);
+    box-shadow: 0 0 0 0 rgba(154, 205, 50, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(154, 205, 50, 0);
+    box-shadow: 0 0 0 10px rgba(154, 205, 50, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(154, 205, 50, 0);
+    box-shadow: 0 0 0 0 rgba(154, 205, 50, 0);
+  }
 }
 ol.progress-meter li.todo {
   font-size: 12px;

@@ -11,8 +11,9 @@ class Status extends React.Component {
   componentDidMount() {
     var i;
     var track = this.state.TrackDetails;
+    var element;
     for (i = 1; i <= track; i++) {
-      var element = document.getElementById(i);
+      element = document.getElementById(i);
       element.classList.remove("todo");
       element.classList.add("done");
     }
