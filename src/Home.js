@@ -4,7 +4,7 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      track: 4
+      track: 2
     };
   }
   render() {

@@ -14,3 +14,4 @@ function App() {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
+// in Home.js you can change the state 'track' inorder to change status of this completely reusable component
